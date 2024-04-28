@@ -275,7 +275,7 @@ body {
 
 .Footer-svg {
     /* background-color: #ffc100; */
-    color: var(--animation-c);
+    color: var(--c-white);
     width: 5rem;
     height: 5rem;
 
