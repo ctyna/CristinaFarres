@@ -1,0 +1,359 @@
+
+.Container{
+    width: 100%; 
+    margin: 7.1rem auto;
+    background-color: var(--c-black);
+}
+
+.Container-video{
+    width: 70%;
+    max-width: 1800px;
+    margin: auto;
+   
+    padding: 0 0 4rem;
+}
+.Main-wrapper{
+   width: var(--width-);
+    
+    margin:7.1rem auto;
+    
+}
+
+
+.Introduction{
+   width: 80%;
+   /* background-color: aqua; */
+   margin:0 auto 5rem;
+
+}
+.Introduction-h2{
+    font-size: var(--font-h2);
+    margin: 5rem auto;
+   
+}
+.Introduction-h2::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+}
+.Introduction-p{
+    
+    margin:2rem auto ;
+}
+.Introduction-span{
+    font-weight: var( --bold-);
+}
+
+.Method{
+    width: 90%;
+    /* background-color: aqua; */
+    margin:0 auto 1rem;
+    
+}
+.Method-h2{
+    font-size: calc(var(--font-h2) - 1em) ;
+    margin: 2rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+
+}
+.Method-span{
+    font-weight: var( --bold-);
+}
+
+.Method-h2::after{
+    content: "";
+    width: 22rem;
+    display: block;
+    border-bottom: 20px solid rgb(300, 2, 2,0.2);
+    position: absolute;
+}
+
+.Phases{
+    width: 90%;
+    margin:0 auto 5rem;
+}
+
+.Phases-h2{
+    width: 100%;
+    font-size: calc(var(--font-h2) - 1em) ;
+    margin: 5rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.Phases-h2::after{
+    content: "";
+    width: 9rem;
+    display: block;
+    border-bottom: 20px solid rgb(300, 2, 2,0.2);
+    position: absolute;
+}
+
+.Phases-grid{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 1rem;
+}
+    
+/* Revisar colores aquí */
+.Phases-card{
+    width: 90%;
+    background-color: aqua;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: .625rem;
+    padding:7rem 5rem;
+    position: relative;
+
+    
+    
+}
+
+.Phases-h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.Phases-card:hover .Phases-h3{
+   
+    opacity: 0;
+}
+
+.Phases-overlay{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    border-radius: .625rem;
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+
+   opacity: 0;
+   transition: all 1s;
+ 
+}
+.Phases-overlay:hover{
+    opacity: 1;
+}
+
+.Phases-ul{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   
+}
+.Phases-li{}
+
+
+
+.Research{
+    width: 90%;
+    margin: auto;
+    /* background-color: yellow; */
+
+ 
+}
+
+.Research-h2{
+    width: 100%;
+    font-size: calc(var(--font-h2) - 1em) ;
+    margin: 5rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.Research-h2::after{
+    content: "";
+    width: 27rem;
+    display: block;
+    border-bottom: 20px solid rgb(300, 2, 2,0.2);
+    position: absolute;
+}
+.Article-h2{
+    font-size: 1.2em;
+    font-weight: var(--bold-);
+}
+.Article-p{
+    margin: 2rem 0;
+}
+.Article-span{
+    font-weight: var(--bold-);
+}
+
+
+
+.Research-h3{
+    font-size: 1.2em;
+    font-weight: var(--bold-);
+    margin: 6rem auto 0;
+
+}
+
+
+.Marquesina{
+    width: 100%;
+    
+    /* background-color: aquamarine; */
+   
+ 
+  overflow: hidden;
+    
+}
+
+.Marquesina-slider{
+    display: grid;
+      grid-template-columns: repeat(10 , 1fr);
+}
+
+.Marquesina-img{
+    width: 31.25rem;
+    padding: 2rem 1rem ;
+    
+    /* background-color: aliceblue; */
+    filter: drop-shadow(.625rem .625rem  .625rem );
+
+    
+  
+    object-fit: contain;
+    
+   
+    animation: movimiento 10s linear infinite;
+}
+
+@keyframes movimiento {
+    0%{
+        transform: translateX(0%);
+    
+    }
+    100%{
+        transform: translateX(-250%);
+    }
+    
+}
+
+
+
+.Require{
+    width: 90%;
+    margin: auto;
+    /* background-color: yellow; */
+
+ 
+}
+
+.Require-h2{
+    width: 100%;
+    font-size: calc(var(--font-h2) - 1em) ;
+    margin: 5rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.Require-h2::after{
+    content: "";
+    width: 30.5rem;
+    display: block;
+    border-bottom: 20px solid rgb(300, 2, 2,0.2);
+    position: absolute;
+}
+
+.Require-ul{
+   
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+      
+}
+
+.Require-funcional{
+  margin: 2rem;
+   display: grid;
+   grid-template-columns: repeat( 2 , 1fr);
+   /* background-color: salmon; */
+}
+
+.Require-li:first-child{
+    font-weight: var(--bold-);
+    margin: 1rem 0;
+}
+.Card{
+    width: 90%;
+    margin:4rem auto;
+    /* background-color: yellow; */
+}
+.Card-h2{
+    font-size: 1.2em;
+    font-weight: var(--bold-);
+    margin: 0 0 2rem;
+}
+.Card-picture{ 
+    margin: 2rem auto;
+    width: 100%;
+   min-height: 5vh;position: relative;
+   /* background-color: aqua; */
+ 
+
+   
+}
+.Card-img{
+  
+    object-fit: contain;  
+     filter: drop-shadow(.625rem .625rem  .625rem );  
+}
+
+
+
+
+
+
+/* Media quearies */
+
+@media  (max-width: 1400px){
+    .Phases-grid{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+
+    }
+ 
+.Require-funcional{
+    grid-template-columns: 1fr;
+    
+  }}
+
+@media (max-width:700px){
+  .Phases-grid{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 2rem;
+  }
+  
+}

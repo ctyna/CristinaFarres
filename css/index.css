@@ -1,0 +1,277 @@
+/* Animación de la intro */
+
+.Animation {
+    position: relative;
+    pointer-events: none;
+
+}
+
+.Animation-slide {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+
+
+
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+    transition: 1s;
+    z-index: 2;
+    animation: slideUp 0.5s forwards;
+    animation-delay: 4s;
+}
+
+.Animation-img {
+    width: 20%;
+    position: absolute;
+
+}
+
+.Animation-img:first-child {
+    top: 0;
+    right: 0;
+}
+
+.Animation-img:nth-child(2) {
+    width: 20%;
+    left: -5%;
+    top: 0%;
+    transform: rotate(100deg);
+}
+
+.Animation-img:nth-child(3) {
+    width: 10%;
+    left: 0;
+    bottom: 0;
+    animation: volar 2s forwards;
+}
+
+.Animation-img:nth-child(4) {
+    width: 8%;
+    left: 0;
+    bottom: 0;
+}
+
+.Animation-img:nth-child(5) {
+    width: 8%;
+    left: 2%;
+    bottom: -10%;
+}
+
+
+.Animation-h2 {
+    color: var(--c-white);
+    font-size: var(--font-h2);
+}
+/* Introducción de principio página */
+
+.Introduction{
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    
+ position: relative;
+}
+
+.Introduction-video{
+
+    opacity: 0.2;
+    width: 100%;
+    
+ 
+  
+  
+    
+}
+.Introduction-text{
+  
+  color: var(--c-white); 
+    position: absolute;
+    top: 30%;
+    left: calc(50% / 2);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.Introduction-h2{
+   
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    font-size: 8em;
+    filter: drop-shadow(0px 10px 0.2rem rgba(0, 0, 2, 0.479));
+  
+}
+
+.Introduction-h3{
+  
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+  filter: drop-shadow(0px 10px 1rem rgba(0, 0, 2, 0.479));
+    
+    font-size: var(--font-h2);
+}
+
+
+
+
+
+
+
+/* Keyframes */
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+
+}
+
+@keyframes volar {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(90%) translateY(-180%);
+    }
+}
+
+
+/* Media quearies */
+
+@media (max-width: 1500px) {
+    .Animation-img {
+        width: 30%;
+    }
+
+    .Animation-img:nth-child(3) {
+        width: 15%;
+    }
+
+    .Animation-img:nth-child(4),
+    .Animation-img:nth-child(5) {
+        width: 12%;
+    }
+
+    @keyframes volar {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(90%) translateY(-160%);
+        }
+    }
+
+
+}
+
+@Media (max-width: 800px) {
+    .Animation-img:nth-child(2) {
+        width: 50%;
+        left: -10%;
+        transform: rotate(100deg);
+    }
+
+    .Animation-img {
+        width: 30%;
+    }
+
+    .Animation-img:nth-child(3) {
+        width: 15%;
+    }
+
+    .Animation-img:nth-child(4),
+    .Animation-img:nth-child(5) {
+        width: 20%;
+    }
+
+    @keyframes volar {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(90%) translateY(-250%);
+        }
+    }
+
+    .Introduction-h2{
+        font-size: 4em;
+    }
+
+
+}
+
+@Media (max-width: 600px) {
+  
+
+    .Animation-h2 {
+        font-size: calc(var(--font-h2) - 0.7em);
+    }
+
+    .Animation-img {
+        width: 40%;
+    }
+
+    .Animation-img:nth-child(2) {
+        width: 60%;
+        left: -10%;
+        transform: rotate(100deg);
+    }
+
+    .Animation-img:nth-child(3) {
+        width: 20%;
+    }
+
+    .Animation-img:nth-child(4),
+    .Animation-img:nth-child(5) {
+        width: 30%;
+    }
+
+    @keyframes volar {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(90%) translateY(-350%) opacity: 0;
+        }
+    }
+
+
+}

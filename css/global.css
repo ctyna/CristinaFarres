@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+p a {
+    display: inline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+    display: block;
+    width: 100%;
+
+}
+
+svg {
+    fill: currentColor;
+}
+
+form,
+input,
+label,
+select,
+option,
+textarea,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    background-color: transparent;
+    display: block;
+}
+
+:root {
+    font-size: 100%;
+
+    /* Custom properties */
+
+    /* Fuente para títulos */
+    --f-title: "Playfair Display", serif;
+
+    /* Variables de texto */
+
+    --font-h2: 3em;
+    --font-h3: 2em;
+
+    /* Variables de fuente decorativos */
+    --bold-: bolder;
+
+    /* Variables de color */
+
+    --bg-c: #FFF1DE;
+    --yell-c: #ffc100;
+
+    /* Variables colores primarios */
+
+    --c-black: black;
+    --c-white: #ffff;
+
+
+    /* Variables de margin de casi todas las páginas de 
+     después del header-fixed */
+    --margin-h: 10rem auto 0;
+
+    /* Variables de ancho de toda la web para unificar estilo */
+    --width-: 80%;
+
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(2,48,71);
+    background: linear-gradient(127deg, rgba(2,48,71,1) 48%, rgba(41,43,43,1) 100%);
+    font-family: "Poppins", sans-serif;
+    color: var(--c-white);
+
+}
+
+
+/* Header común en todos los html */
+
+.Header {
+    /* background-color: aqua; */
+    width: 100%;
+
+
+    padding: 2rem 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.Header-h1 {
+    font-size: 1.2em;
+}
+
+.Header-btn {
+    display: none;
+}
+
+.Header-svg {
+
+    fill: currentColor;
+    width: 2rem;
+    height: 2rem;
+}
+
+.Header-span {
+    display: none;
+}
+
+.Header-logo {
+    width: 4.375rem;
+    height: 3.125rem;
+
+}
+
+.Header-logo:hover {
+    color: #E4884D;
+}
+
+.Nav-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Nav-li {
+    text-transform: capitalize;
+
+}
+
+.Nav-li:nth-child(5),
+.Nav-li:nth-child(6) {
+    display: none;
+}
+
+/* Elementos para dar visibilidad de dónde esta el usuario */
+
+.Nav-a--isActive {
+    font-weight: bolder;
+
+}
+
+.Nav-a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .125rem;
+    background-color: var(--c-white);
+    transform: scaleX(0);
+    transition: transform .5s ease;
+}
+
+.Nav-a:hover::after {
+    transform: scaleX(1);
+}
+
+.Nav-span {
+    /* background-color: aliceblue; */
+
+    padding: 0rem 0 0 4.9rem;
+    font-style: italic;
+}
+/* Elemento de redes en la parte inferior izquierda de la pantalla */
+
+.Redes {
+
+    /* background-color: aqua; */
+
+    width: 5%;
+    padding: 0 5.2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+ 
+}
+
+.Red-svg {
+   color: grey;
+    width: 2rem;
+    height: 2rem;
+}
+
+.Red-svg:hover {
+    color: var(--c-white);
+    filter: drop-shadow(2px 2px 10px);
+}
+
+
+/* Footer */
+.Footer {
+    width: 100%;
+    background-color: var(--c-black);
+    margin: 10rem auto 0;
+    padding: 2rem;
+    color: var(--c-white);
+   
+
+
+}
+
+.Footer-wrapper {
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Footer-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Footer-span {
+    font-size: 0.8em;
+}
+
+.Span-h4 {
+    margin: 0 0 1rem;
+}
+
+.Footer-svg {
+    /* background-color: #ffc100; */
+    color: var(--animation-c);
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.Footer-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Footer-a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .125rem;
+    background-color: var(--c-white);
+    transform: scaleX(0);
+    transition: transform .5s ease;
+}
+
+.Footer-a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+/* Media quearies */
+
+@media (max-width: 1000px) {}
+
+@media (max-width:700px) {
+    .Header-logo {
+        width: 3.125rem;
+    }
+
+    .Nav {
+        width: 100%;
+        display: none;
+        pointer-events: none;
+        overflow: hidden;
+        background-color: rgb(255, 241, 222, 0.9);
+
+
+    }
+
+    .Nav.isActive {
+        background-color: rgb(255, 241, 222, 0.90);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        padding: 2rem;
+        pointer-events: auto;
+
+
+
+    }
+
+    .Header-btn {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .Nav-ul {
+        /* background-color: aliceblue; */
+
+
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .Nav-li:nth-child(5),
+    .Nav-li:nth-child(6) {
+        display: flex;
+    }
+    
+    
+    .Footer-wrapper{
+        justify-content: center;
+        gap: 2rem;
+       
+        
+    }
+ 
+    .Span-h4 , .Span-h5{
+        font-size: 0.8em;
+    }
+    .Red-svg {
+        display: none;
+    }
+}
