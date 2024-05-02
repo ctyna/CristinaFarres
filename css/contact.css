@@ -365,9 +365,77 @@ textarea {
     
 
     textarea {
+        margin: auto;
+        width: 80%;
+        padding: 3rem;
+    }
+
+}
+
+@Media (max-width: 377px) {
+    .Formulario{
+        width: 100%;
+    }
+
+    .Formulario-form {
+
+        padding: 1rem;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    input {
+        margin: auto;
+        background-color: antiquewhite;
+        padding: 0.2rem;
+        border-radius: .625rem;
+    
+    }
+    
+
+    textarea {
 
         width: 80%;
         padding: 3rem;
+    }
+
+}
+
+@Media (max-width: 300px) {
+    .Formulario{
+        width: 100%;
+    }
+
+    .Formulario-form {
+
+        padding: 1rem 0;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    input {
+        margin: auto;
+        background-color: antiquewhite;
+        padding: 0.1rem;
+        border-radius: .625rem;
+    
+    }
+    
+
+    textarea {
+        margin: auto;
+        width: 80%;
+        padding: 2rem;
     }
 
 }

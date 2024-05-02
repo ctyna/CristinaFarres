@@ -1,34 +1,19 @@
 'use strict'
 
-const intro1 = document.querySelector(`.Intro-slide`)
-const intro2 = document.querySelector(`.Intro-slide2`)
+
+
+// Quiero que en los diferentes textos se añada
+//  y se quite la clase isActive.
+const text1 = document.querySelector(`.Introduction-h3`)
+const text2 = document.querySelector(`.Introduction-h3--2`)
 
 
 
-// Funciones
 
-// Animación intro
-
-const windowHandler = () => {
-    setTimeout(() => {
-     
-        setTimeout(() =>{
-            intro1.style.top = '-100vh'
-        }, 1300);
-   
-    
-    setTimeout(()=>
-    {   intro2.style.bottom= '100vh'
-}, 1300);
-
-    
-    });
-
+function cambiarTexto() {
+    text1.classList.toggle(`isActive`);
+    text2.classList.toggle(`isActive`)
 }
 
-
-
-// Asignaciones
-window.addEventListener('DOMContentLoaded', windowHandler);
-
+setInterval(cambiarTexto, 3000);
 

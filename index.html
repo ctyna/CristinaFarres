@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/global.js" defer></script>
+    <script src="js/index.js" defer></script>
     <!-- Fuente principal -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,23 +19,6 @@
 </head>
 
 <body>
-
-    <!-- Animación inicial -->
-    
-    <div class="Animation">
-        <div class="Animation-slide">
-          
-           <img  class="Animation-img" src="assets/redtop.png" alt="flor roja en la parte superior derecha" loading="lazy">
-           <img  class="Animation-img" src="assets/llimoner.png" alt="flor roja en la parte superior derecha" loading="lazy">
-        <img  class="Animation-img" src="assets/mariposa.png" alt="">
-        <img src="assets/yellowflower.png" alt="" class="Animation-img">
-        <img src="assets/yellowflower.png" alt="" class="Animation-img">
-
-         
-           <h2  class="Animation-h2"> Live a life you will remember</h2>
-        </div>
-
-    </div>
 
 
     <!-- Header común en todos los html -->
@@ -50,7 +34,7 @@
 
             </a>
         </h1>
-        <button class="Header-btn">
+        <button class="Header-btn" title="ir a menú navegación apto móvil">
             <svg class="Header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 viewBox="0 0 16 16">
                 <use xlink:href="#Header-svg"></use>
@@ -116,7 +100,11 @@
             </video>
             <div class="Introduction-text">
                 <h2 class="Introduction-h2">Cristina Farrés</h2>
-                <h3 class="Introduction-h3">UX / UI designer & Front-End developer</h3>
+                <div class="Introduction-container">
+                <h3 class="Introduction-h3 isActive">UX / UI designer</h3>
+                <h3 class="Introduction-h3--2">Front-End developer</h3>
+            </div>
+                
             </div>
         </div>
         <!-- Sección sobre mí -->
@@ -197,7 +185,57 @@
                     </a>
                 </div>
             </div>
-            <a href="proyectos.html" title="ir a proyectos" class="Projects-a">Ver más proyectos</a>
+
+            <div class="Projects-btn">
+                <a href="proyectos.html" title="ir a proyectos" class="Projects-a">
+                    <h4 class="Projects-h4">Ver más proyectos</h4>
+                </a>
+                <svg class="Projects-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <use xlink:href="#Next-svg"></use>
+                </svg>
+
+            </div>
+
+        </div>
+        <!-- Sección de servicios que ofrezo -->
+        <div class="Servicio">
+            <svg class="Flower-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                <use xlink:href="#Flower-svg"></use>
+            </svg>
+
+            <h2 class="Servicio-h2">Servicios</h2>
+            <div class="Servicio-containers">
+                <div class="Servicio-elements">
+                    <h3 class="Servicio-h3">UX / UI</h3>
+                    <h4 class="Servicio-h4">
+                        Figma| Optimal Workshop | Miró|
+                        Design Thinking | User Experience
+                        Methodologies | User Persona | Visual
+                        Design | Wireframing | Prototyping |
+                        Usability Testing | UX Research |
+                        Information Architecture | App & web
+                        design | Responsive
+                    </h4>
+
+                </div>
+                <div class="Servicio-elements">
+                    <h3 class="Servicio-h3">Front-End</h3>
+                    <h4 class="Servicio-h4">
+                        HTML | CSS |
+                        JS | Metodología |
+                        Custom Properties | Responsive
+                    </h4>
+                </div>
+                <div class="Servicio-elements">
+                    <h3 class="Servicio-h3">Fotografía</h3>
+                    <h4 class="Servicio-h4">
+                        Fotografía de moda |
+                        Photoshop | Lightroom |
+                        Revelado | Fotografía de família
+                    </h4>
+                </div>
+            </div>
         </div>
 
 
@@ -266,7 +304,31 @@
 
 
     <!-- Apartado de SVG específico del documento en concreto -->
-    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+
+    <svg class="flower-svg" width="200" height="200" viewBox="0 0 200 200" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+
+        <symbol id="Flower-svg">
+            <path
+                d="M127.233 110.308C145.856 117.358 170.923 116.073 186.883 107.25L200 100L186.883 92.7498C170.923 83.9274 145.857 82.6428 127.233 89.6916L113.267 94.9781C113.18 94.6967 113.075 94.4251 112.972 94.1516L126.546 88.0321C144.7 79.8479 161.515 61.2149 166.563 43.6907L170.711 29.2888L156.309 33.4367C138.785 38.4842 120.152 55.3 111.967 73.4535L106.057 86.5642C105.784 86.4316 105.511 86.3 105.229 86.1851L110.308 72.7665C117.357 54.1433 116.072 29.0767 107.25 13.1163L100 0L92.7498 13.1167C83.9274 29.0772 82.6428 54.1433 89.6916 72.767L94.7707 86.1856C94.4884 86.3005 94.2154 86.4321 93.9428 86.5646L88.0321 73.4539C79.8479 55.3005 61.2149 38.4846 43.6907 33.4372L29.2888 29.2893L33.4367 43.6912C38.4842 61.2149 55.3 79.8484 73.4535 88.0326L87.0274 94.1521C86.9247 94.4256 86.8191 94.6972 86.733 94.9786L72.7665 89.6921C54.1433 82.6428 29.0767 83.9279 13.1163 92.7502L0 100L13.1167 107.25C29.0772 116.073 54.1433 117.358 72.767 110.308L87.3861 104.775C87.5014 105.027 87.6172 105.28 87.747 105.524L73.454 111.968C55.3005 120.152 38.4847 138.785 33.4372 156.309L29.2893 170.711L43.6912 166.563C61.2149 161.516 79.8484 144.7 88.0326 126.547L94.6656 111.834C94.9107 111.936 95.1651 112.02 95.4172 112.109L89.6921 127.234C82.6428 145.857 83.9279 170.924 92.7502 186.884L100 200.001L107.251 186.884C116.073 170.924 117.358 145.858 110.309 127.234L104.583 112.108C104.835 112.02 105.09 111.936 105.335 111.833L111.968 126.546C120.152 144.7 138.785 161.515 156.309 166.563L170.711 170.711L166.563 156.309C161.516 138.785 144.7 120.152 126.547 111.967L112.253 105.524C112.383 105.28 112.499 105.027 112.614 104.774L127.233 110.308Z"
+                fill="url(#paint0_linear_116_92)" />
+
+            <defs>
+                <linearGradient id="paint0_linear_116_92" x1="177" y1="-9.23653e-06" x2="39.4993" y2="152.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#B0B9FF" />
+                    <stop offset="1" stop-color="#E7E9FF" />
+                </linearGradient>
+                <clipPath id="clip0_116_92">
+                    <rect width="200" height="200" fill="white" />
+                </clipPath>
+            </defs>
+
+        </symbol>
+    </svg>
+    <svg class="Arrow-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
 
         <symbol id="Prev-svg">
             <path fill-rule="evenodd"
@@ -281,38 +343,7 @@
     </svg>
 
 
-    <svg class="svg" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.5 134.5" width="16"
-        height="16">
-        <symbol id="Down-svg">
 
-            <defs>
-                <style>
-                    .cls-1 {
-                        fill: currentColor;
-                    }
-
-                    .cls-2 {
-                        fill: none;
-                        stroke: #ffff;
-                        stroke-miterlimit: 10;
-                        stroke-width: 6px;
-                    }
-                </style>
-            </defs>
-            <g id="circle">
-                <g>
-                    <circle class="cls-1" cx="67.25" cy="67.25" r="64.25" />
-                    <path
-                        d="m67.25,6c33.77,0,61.25,27.48,61.25,61.25s-27.48,61.25-61.25,61.25S6,101.02,6,67.25,33.48,6,67.25,6m0-6C30.11,0,0,30.11,0,67.25s30.11,67.25,67.25,67.25,67.25-30.11,67.25-67.25S104.39,0,67.25,0h0Z" />
-                </g>
-            </g>
-            <g id="arrow">
-                <line class="cls-2" x1="67.71" y1="20.94" x2="67.71" y2="97.94" />
-                <line class="cls-2" x1="69.71" y1="99.48" x2="42.21" y2="71.98" />
-                <line class="cls-2" x1="66.29" y1="98.69" x2="93.79" y2="71.19" />
-            </g>
-        </symbol>
-    </svg>
 
 
 
@@ -326,7 +357,7 @@
                 <span class="Span-h4">Based in Spain, Barcelona</span>
                 <span class="Span-h4">Contacto:</span>
                 <span class="Span-h5">
-                    <a href="mailto:hola@cristinafarres.com" class="Footer-a" title="enviar correo">
+                    <a href="mailto:hola@cristinafarres.com" class="Footer-link" title="enviar correo">
                         hola@cristinafarres.com</a>
                 </span>
 

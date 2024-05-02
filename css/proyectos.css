@@ -22,7 +22,7 @@
 }
 .Container-img{
     object-fit: cover;
-    transform: scale(1);
+    
     border-radius: .625rem;   
     transform: scale(1);
     transition: all 0.5s;

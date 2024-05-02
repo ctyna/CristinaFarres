@@ -75,8 +75,8 @@ button {
 
     /* Variables de color */
 
-    --bg-c: #FFF1DE;
-    --yell-c: #ffc100;
+    --bg-c: #112E3D;
+    --c-orange: #fd9139;
 
     /* Variables colores primarios */
 
@@ -101,7 +101,7 @@ html {
 }
 
 body {
-    background: rgb(2,48,71);
+    background:#112E3D;
     background: linear-gradient(127deg, rgba(2,48,71,1) 48%, rgba(41,43,43,1) 100%);
     font-family: "Poppins", sans-serif;
     color: var(--c-white);
@@ -133,6 +133,7 @@ body {
 }
 
 .Header-btn {
+    color: var(--c-white);
     display: none;
 }
 
@@ -281,6 +282,22 @@ body {
 
 }
 
+.Footer-link::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: .125rem;
+    background-color: var(--c-white);
+    transform: scaleX(0);
+    transition: transform .5s ease;
+}
+
+
+.Footer-link:hover::after {
+    transform: scaleX(1);
+}
+
+
 .Footer-ul {
     display: flex;
     flex-flow: column nowrap;
@@ -299,6 +316,7 @@ body {
     transition: transform .5s ease;
 }
 
+
 .Footer-a:hover::after {
     transform: scaleX(1);
 }
@@ -310,23 +328,31 @@ body {
 
 @media (max-width: 1000px) {}
 
-@media (max-width:700px) {
+@media (max-width:750px) {
     .Header-logo {
-        width: 3.125rem;
+        width: 3rem;
     }
-
+    .Red-svg {
+        display: none;
+    }
+.Header{
+    background-color: var(--bg-c);
+ justify-content: space-between;
+    padding: 1rem 3rem;
+}
     .Nav {
         width: 100%;
         display: none;
         pointer-events: none;
         overflow: hidden;
-        background-color: rgb(255, 241, 222, 0.9);
+        
 
 
     }
 
     .Nav.isActive {
-        background-color: rgb(255, 241, 222, 0.90);
+        background-color: var(--bg-c);
+        color: var(--c-white);
         position: absolute;
         top: 100%;
         left: 0;
@@ -360,7 +386,7 @@ body {
     .Nav-li:nth-child(6) {
         display: flex;
     }
-    
+
     
     .Footer-wrapper{
         justify-content: center;
@@ -372,7 +398,5 @@ body {
     .Span-h4 , .Span-h5{
         font-size: 0.8em;
     }
-    .Red-svg {
-        display: none;
-    }
+   
 }

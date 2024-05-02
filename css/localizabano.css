@@ -1,57 +1,67 @@
-
-.Container{
-    width: 100%; 
+/* Parte del vídeo */
+.Container {
+    width: 100%;
     margin: 7.1rem auto;
     background-color: var(--c-black);
 }
 
-.Container-video{
+.Container-video {
     width: 70%;
     max-width: 1800px;
     margin: auto;
-   
+
     padding: 0 0 4rem;
 }
-.Main-wrapper{
-   width: var(--width-);
-    
-    margin:7.1rem auto;
-    
-}
+
+/* Parte principal y su wrapper para establecer un orden visual */
+.Main-wrapper {
+    width: var(--width-);
+    margin: auto;
+    max-width: 1700px;
 
 
-.Introduction{
-   width: 80%;
-   /* background-color: aqua; */
-   margin:0 auto 5rem;
 
 }
-.Introduction-h2{
+
+/* Partes de la introducción */
+.Introduction {
+    width: 80%;
+    /* background-color: aqua; */
+    margin: 0 auto 5rem;
+
+}
+
+.Introduction-h2 {
     font-size: var(--font-h2);
     margin: 5rem auto;
-   
-}
-.Introduction-h2::after{
-    content: "";
-    display: block;
-    border-bottom: 2px solid black;
-}
-.Introduction-p{
-    
-    margin:2rem auto ;
-}
-.Introduction-span{
-    font-weight: var( --bold-);
+
 }
 
-.Method{
+.Introduction-h2::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--c-white);
+}
+
+.Introduction-p {
+
+    margin: 2rem auto;
+}
+
+.Introduction-span {
+    font-weight: var(--bold-);
+}
+
+/* Métodos de investigación */
+.Method {
     width: 90%;
     /* background-color: aqua; */
-    margin:0 auto 1rem;
-    
+    margin: 0 auto 1rem;
+
 }
-.Method-h2{
-    font-size: calc(var(--font-h2) - 1em) ;
+
+.Method-h2 {
+    font-size: calc(var(--font-h2) - 1em);
     margin: 2rem auto;
     display: flex;
     flex-flow: row nowrap;
@@ -60,26 +70,22 @@
     position: relative;
 
 }
-.Method-span{
-    font-weight: var( --bold-);
+
+.Method-span {
+    font-weight: var(--bold-);
 }
 
-.Method-h2::after{
-    content: "";
-    width: 22rem;
-    display: block;
-    border-bottom: 20px solid rgb(300, 2, 2,0.2);
-    position: absolute;
-}
+/* Fases del proceso */
 
-.Phases{
+.Phases {
     width: 90%;
-    margin:0 auto 5rem;
+    margin: 0 auto 5rem;
+
 }
 
-.Phases-h2{
+.Phases-h2 {
     width: 100%;
-    font-size: calc(var(--font-h2) - 1em) ;
+    font-size: calc(var(--font-h2) - 1em);
     margin: 5rem auto;
     display: flex;
     flex-flow: row nowrap;
@@ -88,96 +94,106 @@
     position: relative;
 }
 
-.Phases-h2::after{
-    content: "";
-    width: 9rem;
-    display: block;
-    border-bottom: 20px solid rgb(300, 2, 2,0.2);
-    position: absolute;
-}
 
-.Phases-grid{
+.Phases-grid {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    column-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+
 }
-    
-/* Revisar colores aquí */
-.Phases-card{
-    width: 90%;
-    background-color: aqua;
+
+
+.Phases-card {
+    padding: 0 2rem;
+    width: 21.875rem;
+    height: 15.625rem;
+    perspective: 62.5rem;
+}
+
+.Phases-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+
+}
+
+.Phases-card:hover .Phases-container {
+    transform: rotateY(180deg);
+}
+
+.Phases-front {
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-orange);
+    color: var(--c-white);
+    border-radius: .625rem;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-   
-    border-radius: .625rem;
-    padding:7rem 5rem;
-    position: relative;
 
-    
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
 }
 
-.Phases-h3{
+
+.Phases-h3 {
     text-transform: uppercase;
     font-size: 1.5rem;
 }
 
-.Phases-card:hover .Phases-h3{
-   
-    opacity: 0;
-}
 
-.Phases-overlay{
-    background-color: blue;
+.Phases-back {
+    background-color: #626B92;
     width: 100%;
     height: 100%;
     border-radius: .625rem;
- 
+
     position: absolute;
     top: 0;
     left: 0;
 
     display: flex;
     flex-flow: column nowrap;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 
-   opacity: 0;
-   transition: all 1s;
- 
-}
-.Phases-overlay:hover{
-    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
-.Phases-ul{
+.Phases-ul {
     /* background-color: antiquewhite; */
     display: flex;
     flex-flow: column nowrap;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
-   
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
 }
-.Phases-li{}
 
+/* Resultados de los estudios */
 
-
-.Research{
-    width: 90%;
+.Research {
+    width: 72%;
+    /* background-color: aqua; */
     margin: auto;
-    /* background-color: yellow; */
 
- 
+
 }
 
-.Research-h2{
+.Research-h2 {
     width: 100%;
-    font-size: calc(var(--font-h2) - 1em) ;
+    font-size: calc(var(--font-h2) - 1em);
     margin: 5rem auto;
     display: flex;
     flex-flow: row nowrap;
@@ -186,88 +202,107 @@
     position: relative;
 }
 
-.Research-h2::after{
-    content: "";
-    width: 27rem;
-    display: block;
-    border-bottom: 20px solid rgb(300, 2, 2,0.2);
-    position: absolute;
-}
-.Article-h2{
+
+.Article-h2 {
     font-size: 1.2em;
     font-weight: var(--bold-);
+
 }
-.Article-p{
+
+.Article-p {
     margin: 2rem 0;
 }
-.Article-span{
+
+.Article-span {
     font-weight: var(--bold-);
 }
 
-
-
-.Research-h3{
+.Research-h3 {
     font-size: 1.2em;
     font-weight: var(--bold-);
-    margin: 6rem auto 0;
+    margin: 6rem auto 8rem;
 
 }
 
 
-.Marquesina{
-    width: 100%;
-    
-    /* background-color: aquamarine; */
-   
- 
-  overflow: hidden;
-    
-}
 
-.Marquesina-slider{
-    display: grid;
-      grid-template-columns: repeat(10 , 1fr);
-}
+/* Carrousel imágenes del proyecto que se irán pasando*/
 
-.Marquesina-img{
-    width: 31.25rem;
-    padding: 2rem 1rem ;
-    
-    /* background-color: aliceblue; */
-    filter: drop-shadow(.625rem .625rem  .625rem );
+.Carrousel {
+    width: 60%;
 
-    
-  
-    object-fit: contain;
-    
-   
-    animation: movimiento 10s linear infinite;
-}
-
-@keyframes movimiento {
-    0%{
-        transform: translateX(0%);
-    
-    }
-    100%{
-        transform: translateX(-250%);
-    }
-    
-}
-
-
-
-.Require{
-    width: 90%;
     margin: auto;
-    /* background-color: yellow; */
+    /* background-color: aqua; */
+    border-radius: .625rem;
+    position: relative;
+    overflow: hidden;
 
- 
 }
 
-.Require-h2{
+.Carrousel-container {
+    width: 300%;
+    padding: 0 0 5rem;
+
+
+    /* background-color: chartreuse; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Carrousel-img {
+    object-fit: cover;
+    max-height: 25rem;
+
+    overflow: hidden;
+}
+
+.Carrousel-arrow {
+
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+
+.Next {
+    right: 0;
+}
+
+.Prev {
+    left: 0;
+}
+
+.Carrousel-svg {
+    fill: currentColor;
+    width: 3rem;
+    height: 2rem;
+    opacity: 1;
+
+}
+
+.Carrousel-container:hover .Carrousel-svg {
+    opacity: 1;
+}
+
+
+
+
+.Require {
+    width: 70%;
+    /* background-color: aqua; */
+    margin: auto;
+
+
+}
+
+.Require-h2 {
     width: 100%;
-    font-size: calc(var(--font-h2) - 1em) ;
+    font-size: calc(var(--font-h2) - 1em);
     margin: 5rem auto;
     display: flex;
     flex-flow: row nowrap;
@@ -276,59 +311,189 @@
     position: relative;
 }
 
-.Require-h2::after{
-    content: "";
-    width: 30.5rem;
-    display: block;
-    border-bottom: 20px solid rgb(300, 2, 2,0.2);
-    position: absolute;
-}
 
-.Require-ul{
-   
+.Require-ul {
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
-      
+
 }
 
-.Require-funcional{
-  margin: 2rem;
-   display: grid;
-   grid-template-columns: repeat( 2 , 1fr);
-   /* background-color: salmon; */
+.Require-funcional {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: salmon; */
 }
 
-.Require-li:first-child{
+.Require-li:first-child {
     font-weight: var(--bold-);
     margin: 1rem 0;
 }
-.Card{
-    width: 90%;
-    margin:4rem auto;
-    /* background-color: yellow; */
+
+.Card {
+    width: 70%;
+    margin: 6rem auto;
+
 }
-.Card-h2{
+
+.Card-h2 {
     font-size: 1.2em;
     font-weight: var(--bold-);
     margin: 0 0 2rem;
 }
-.Card-picture{ 
+
+.Card-picture {
     margin: 2rem auto;
     width: 100%;
-   min-height: 5vh;position: relative;
-   /* background-color: aqua; */
- 
+    min-height: 5vh;
+    position: relative;
+    /* background-color: aqua; */
 
+
+
+}
+
+.Card-img {
+
+    object-fit: contain;
+    filter: drop-shadow(.625rem .625rem .625rem);
+}
+
+.Lowfi {
+    background-color: var(--c-white);
+    padding: 5rem;
+    color: var(--c-black);
+}
+.Red-svg:hover{
+    color: var(--c-orange);
+}
+.Wireframes-color{
+    width: 100%;
+    background-color: var(--c-white);
+    padding: 2rem 0;
+    color: var(--c-black);
+}
+.Wireframes-color:nth-child(2){
+    background-color: #626B92;
+    color: var(--c-white);
+}
+.Wireframes-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.Wireframes-h2 {
+    
+    font-size: 1.2em;
+    font-weight: var(--bold-);
+    margin: 0 0 2rem;
+}
+
+.Wireframes-h3 {
    
+    font-weight: bolder;
+    border-bottom: 1px solid var(--c-orange);
+    padding: 1rem 0;
 }
-.Card-img{
-  
-    object-fit: contain;  
-     filter: drop-shadow(.625rem .625rem  .625rem );  
+
+.Wireframes-btn {
+    width: 18.75rem;
+    margin: 5rem auto;
+    padding: 2rem 2rem;
+    background-color: var(--c-orange);
+    border-radius: .625rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    transition: all 0.2s ease;
+    color: var(--c-black);
+
 }
+.Wireframes-btn:nth-child(2){
+    background-color: orange;
+}
+
+.Wireframes-img {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    object-fit: contain;
+}
+
+.Wireframes-img--rev {
+    /* background-color: aqua; */
+   
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+   
+    margin: auto;
+    padding: 2rem 0;
+}
+
+
+
+.Wireframes-btn:hover {
+    background-color: rgb(252, 184, 95);
+    color: var(--c-black);
+}
+
+
+.Wireframes-h4 {
+    /* background-color: aqua; */
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.Wireframes-svg {
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(0%);
+
+}
+
+.Wireframes-btn:hover .Wireframes-svg {
+    transform: translateX(1.25rem);
+    color: var(--c-black);
+}
+.Results{
+    margin: 10rem 0 0;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px ,1fr));
+    gap: 1rem ;
+     overflow: hidden;
+ 
+}
+.Results-container{
+    overflow: hidden;
+}
+.Results-h2{
+    color: var(--c-orange);
+    font-size: 5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Results-img{
+
+    width:100%;
+   object-fit: cover;
+   transform: scale(1);
+   transition: all 0.5s;
+}
+.Results-container:hover .Results-img{
+    transform: scale(1.5);
+}
+
 
 
 
@@ -337,23 +502,51 @@
 
 /* Media quearies */
 
-@media  (max-width: 1400px){
-    .Phases-grid{
-        grid-template-columns: repeat(2,1fr);
+@media (max-width: 1400px) {
+    .Phases-grid {
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
 
     }
- 
-.Require-funcional{
-    grid-template-columns: 1fr;
-    
-  }}
 
-@media (max-width:700px){
-  .Phases-grid{
-    grid-template-columns: 1fr;
-    column-gap: 0;
-    row-gap: 2rem;
-  }
-  
+    .Require-funcional {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (max-width:700px) {
+    .Phases-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 2rem;
+    }
+
+    .Phases-card {
+        padding: 0 2rem;
+        width: 25rem;
+        height: 15rem;
+        perspective: 62.5rem;
+
+    }
+
+    .Carrousel-svg {
+
+        width: 1rem;
+        height: 1rem;
+
+    }
+
+    .Lowfi-btn {
+        width: 100%;
+
+    }
+
+    .Lowfi-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+
 }
