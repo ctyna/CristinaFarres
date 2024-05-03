@@ -51,9 +51,6 @@ padding: 5rem 0;
    
    
 }
-.About-asset{ 
-    transition: transform rotate 1s ease;
-}
 
 .Formacion{
     width: 85%;
@@ -76,7 +73,7 @@ padding: 5rem 0;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 0.5;
+    gap: 0.5rem;
 }
 .Formacion-li{
     font-size: 1.5em;
@@ -86,18 +83,53 @@ padding: 5rem 0;
     font-size: 1em;
     color: lightsalmon;
 }
+.Main-btn{
+width: 20%;
+margin: auto;
+color: var(--c-orange);
+padding: 2rem;
+border-radius: .625rem;
+background-color: var(--c-black);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.Main-a{
+    font-size: 1.5em;
+}
 
 
 
 
 
-
-@media (max-width:1000px) {
+@media (max-width:1500px) {
     .About-wrapper{
         grid-template-columns: 1fr;
         row-gap: 5rem;
     }
+    .Main-btn{
+        width: 30%;
+    }.Main-a{
+        font-size: 1.2em;
+    }
 }
+@media (max-width:920px) {
+    .About-wrapper{
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+    .Main-btn{
+        width: 40%;
+    }.Main-a{
+        font-size: 1.2em;
+    }
+}
+
+
+
+
 
 @media (max-width:700px) {
     .About-text{
@@ -136,4 +168,26 @@ padding: 5rem 0;
         font-size: 0.8em;
 
     }
+    .Main-btn{
+        width: 60%;
+    }
+    .Main-a{
+        width: 100%;
+        font-size: 0.9em;
+        margin: auto;
+        text-align: center;
+    }
 }
+
+@media (max-width:482px) {
+ 
+    .Main-btn{
+        width: 60%;
+    }
+    .Main-a{
+        width: 100%;
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
+

@@ -356,7 +356,7 @@ body {
 
     .Nav.isActive {
         background-color: rgba(0, 0, 0, 0.9);
-        filter: blur(2);
+       
         color: var(--c-white);
         position: absolute;
         top: 100%;
@@ -367,7 +367,7 @@ body {
         justify-content: center;
         align-content: center;
         padding: 2rem;
-        pointer-events: auto;
+        pointer-events: auto ;
 
 
 
