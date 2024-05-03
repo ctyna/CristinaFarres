@@ -229,7 +229,7 @@
 /* Carrousel imágenes del proyecto que se irán pasando*/
 
 .Carrousel {
-    width: 60%;
+    width: 50%;
 
     margin: auto;
     /* background-color: aqua; */
@@ -252,7 +252,7 @@
 
 .Carrousel-img {
     object-fit: cover;
-    max-height: 25rem;
+    border-radius: .625rem;
 
     overflow: hidden;
 }
@@ -278,17 +278,13 @@
 }
 
 .Carrousel-svg {
-    fill: currentColor;
+    color: var(--c-black);
+   
     width: 3rem;
     height: 2rem;
     opacity: 1;
 
 }
-
-.Carrousel-container:hover .Carrousel-svg {
-    opacity: 1;
-}
-
 
 
 
@@ -421,6 +417,7 @@
 
 .Wireframes-img {
     width: 70%;
+    height: 40vh;
     margin: auto;
     padding: 2rem;
     object-fit: contain;
@@ -523,7 +520,7 @@
     }
 
     .Phases-card {
-        padding: 0 2rem;
+        padding: 0;
         width: 25rem;
         height: 15rem;
         perspective: 62.5rem;
@@ -550,3 +547,32 @@
 
 
 }
+
+@Media (max-width: 620px) {
+
+
+    .Phases-card {
+        padding: 0;
+        width: 15rem;
+        height: 20rem;
+        perspective: 62.5rem;
+        margin: auto;
+
+    }
+    .Results-h2{
+        font-size: 3em;
+    }
+    .Results{
+        padding: 0 2rem 0 0;
+    }
+    .Wireframes-btn {
+        width: 15rem;
+        padding: 1rem 2rem;
+     }
+     .Wireframes-img{
+        width: 100%;
+        padding: 0;
+     }
+}
+
+

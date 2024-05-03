@@ -15,12 +15,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="js/localizabano.js" defer></script>
+
 
 </head>
 
 <body>
-
 
     <!-- Header común en todos los html -->
 
@@ -47,13 +46,13 @@
                     <a href="index.html" title="ir a home" class="Nav-a">home</a>
                 </li>
                 <li class="Nav-li">
-                    <a href="proyectos.html" title="ir a proyectos" class="Nav-a--isActive">proyectos</a>
+                    <a href="proyectos.html" title="ir a proyectos" class="Nav-a">proyectos</a>
                 </li>
                 <li class="Nav-li">
                     <a href="about.html" title="ir a sobre mí" class="Nav-a">sobre mí</a>
                 </li>
                 <li class="Nav-li">
-                    <a href="contact.html" title="ir a contacto" class="Nav-a">contacto</a>
+                    <a href="contact.html" title="ir a contacto" class="Nav-a--isActive">contacto</a>
                 </li>
                 <li class="Nav-li">
                     <a href="https://github.com/ctyna" title="ir a github" target="_blank" rel="noreferrer"
@@ -68,7 +67,6 @@
 
         </nav>
     </header>
-
 
 
 
@@ -96,9 +94,7 @@
 
     <!-- Vídeo de muestra para el producto -->
     <div class="Container">
-        <video class="Container-video" controls autoplay playsinline loop>
-
-
+        <video class="Container-video" controls autoplay playsinline loop muted poster="assets/lbhome.webp">
 
             <source src="assets/Localizabano.mp4" type="video/mp4">
             <source src="assets/Localizabano.webm" type="video/webm">
@@ -289,8 +285,8 @@
             <div class="Proyectos-carrousel Carrousel">
 
                 <div class="Carrousel-container">
-                    <img src="assets/proba1.jpg" alt="imagen 0" class="Carrousel-img" title="proyecto" loading="lazy">
-                    <img src="assets/imbdsofa.jpg" alt="imagen 1" class="Carrousel-img" title="proyecto" loading="lazy">
+                    <img src="assets/userjourney3.webp" alt="imagen 0" class="Carrousel-img" title="proyecto" loading="lazy">
+                    <img src="assets/userjourney2.webp" alt="imagen 1" class="Carrousel-img" title="proyecto" loading="lazy">
                     <img src="assets/userjourney1.jpg" alt="imagen 2" class="Carrousel-img" title="proyecto"
                         loading="lazy">
                 </div>
@@ -362,7 +358,7 @@
             </div>
 
         </section>
-
+        <!-- Cards giratorias con partes del procedimiento del proyecto -->
         <section class="Card">
             <h2 class="Card-h2">Card sorting</h2>
             <p class="Card-p">El card sorting se ha realizado con Optimal Workshop, con el objetivo de poder
@@ -490,7 +486,8 @@
                 <picture class="Results-picture">
                     <source srcset="assets/lbpriority.jpg" type="logo/jpg" media="(max-width:1200px)">
                     <source srcset="assets/lbpriority.webp" type="logolb/webp" media="(max-width:1200px)">
-                    <img class="Results-img" src="assets/lbpriority.webp" alt="Página acceso prioritario a personas con enfermedad baño"
+                    <img class="Results-img" src="assets/lbpriority.webp"
+                        alt="Página acceso prioritario a personas con enfermedad baño"
                         title="Página acceso prioritario localiza un baño" width="1000" height="358" loading="lazy">
                 </picture>
             </div>
@@ -565,45 +562,45 @@
 
 
 
-    <footer class="Footer">
-        <div class="Footer-wrapper">
+<!-- Footer común en todas las páginas -->
 
-            <div class="Footer-direction">
-                <span class="Span-h4">Based in Spain, Barcelona</span>
-                <span class="Span-h4">Contacto:</span>
-                <span class="Span-h5">
-                    <a href="mailto:hola@cristinafarres.com" class="Footer-a" title="enviar correo">
-                        hola@cristinafarres.com</a>
-                </span>
+<footer class="Footer">
+    <div class="Footer-wrapper">
 
+        <div class="Footer-direction">
+            <span class="Span-h4">Based in Spain, Barcelona</span>
+            <span class="Span-h4">Contacto:</span>
+            <span class="Span-h5">
+                <a href="mailto:hola@cristinafarres.com" class="Footer-link" title="enviar correo">
+                    hola@cristinafarres.com</a>
+            </span>
 
-            </div>
-
-
-            <ul class="Footer-ul">
-                <li class="Footer-li">
-                    <a href="proyectos.html" class="Footer-a" title="ir a Proyectos">Proyectos</a>
-                </li>
-                <li class="Footer-li">
-                    <a href="about.html" class="Footer-a" title="ir a Sobre mí">Sobre mí</a>
-                </li>
-                <li class="Footer-li">
-                    <a href="contact.html" class="Footer-a" title="ir a Contactos">Contacto</a>
-                </li>
-            </ul>
-            <div class="Footer-logo">
-                <svg class="Footer-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    viewBox="0 0 149.09 94.79">
-                    <use xlink:href="#logo-svg"></use>
-                </svg>
-                <span class="Footer-span">Copyright © Cristina Farrés</span>
-            </div>
 
         </div>
-    </footer>
 
 
+        <ul class="Footer-ul">
+            <li class="Footer-li">
+                <a href="proyectos.html" class="Footer-a" title="ir a Proyectos">Proyectos</a>
+            </li>
+            <li class="Footer-li">
+                <a href="about.html" class="Footer-a" title="ir a Sobre mí">Sobre mí</a>
+            </li>
+            <li class="Footer-li">
+                <a href="contact.html" class="Footer-a" title="ir a Contactos">Contacto</a>
+            </li>
+        </ul>
+        <div class="Footer-logo">
+            <svg class="Footer-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                viewBox="0 0 149.09 94.79">
+                <use xlink:href="#logo-svg"></use>
+            </svg>
 
+            <span class="Footer-span">Copyright © Cristina Farrés</span>
+        </div>
+    </div>
+
+</footer>
 
 
 

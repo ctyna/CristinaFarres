@@ -287,13 +287,15 @@ textarea {
 
 
 @Media (max-width: 850px) {
-    
-.Formulario{
+.Container{
     width: 90%;
+}
+.Formulario{
+    width: 100%;
 }
   
     input {
-        padding: 1rem;
+        padding: 2rem 0.2rem;
         margin: auto;
 
     }
@@ -308,7 +310,7 @@ textarea {
 
 
 
-@Media (max-width: 620px) {
+@Media (max-width: 650px) {
 
     .Formulario-form {
 
@@ -323,16 +325,17 @@ textarea {
     }
 
     input {
+        width: 80%;
         margin: auto;
         background-color: antiquewhite;
-        padding: 1rem 2rem;
+        padding:  2rem;
         border-radius: .625rem;
     
     }
     
 
     textarea {
-
+        margin: auto;
         width: 80%;
         padding: 3rem;
     }
@@ -390,6 +393,7 @@ textarea {
     }
 
     input {
+        width: 80%;
         margin: auto;
         background-color: antiquewhite;
         padding: 0.2rem;
@@ -406,14 +410,12 @@ textarea {
 
 }
 
-@Media (max-width: 300px) {
-    .Formulario{
-        width: 100%;
-    }
+@Media (max-width: 281px) {
+    
 
     .Formulario-form {
 
-        padding: 1rem 0;
+       padding: 0;
         /* background-color: aquamarine; */
         display: flex;
         flex-flow: column wrap;
@@ -426,16 +428,16 @@ textarea {
     input {
         margin: auto;
         background-color: antiquewhite;
-        padding: 0.1rem;
-        border-radius: .625rem;
+  
+       
     
     }
     
 
     textarea {
         margin: auto;
-        width: 80%;
-        padding: 2rem;
+        width: 100%;
+        padding: 1rem;
     }
 
 }

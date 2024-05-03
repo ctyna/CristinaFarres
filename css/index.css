@@ -1,5 +1,3 @@
-
-
 /* Introducción de principio página */
 
 .Introduction {
@@ -51,7 +49,7 @@
 
 .Introduction-container {
     /* background-color: aqua; */
-    color:var(--c-orange);
+    color: var(--c-orange);
     font-weight: bolder;
     width: 100%;
 
@@ -62,26 +60,28 @@
     top: 100%;
     left: 0%;
 }
-.Introduction-h3{
+
+.Introduction-h3 {
     position: absolute;
     top: 100%;
     left: 0%;
     opacity: 0;
     transition:
-    
-    
+
+
 }
 
-.Introduction-h3--2{
+.Introduction-h3--2 {
     position: absolute;
     top: 100%;
     left: 0%;
     opacity: 0;
- 
+
 }
-.isActive{
+
+.isActive {
     opacity: 1;
-    transition: opacity 2s ease ;
+    transition: opacity 2s ease;
 }
 
 
@@ -297,6 +297,9 @@
 
 }
 
+.Footer {
+    margin: 0;
+}
 
 /* Keyframes */
 
@@ -314,7 +317,7 @@
 /* Media quearies */
 
 @media (max-width: 1510px) {
- 
+
 
     .Projects-btn {
         width: 50%;
@@ -395,7 +398,7 @@
         font-size: 1rem;
     }
 
-  
+
     .Servicio-containers {
         padding: 0 4rem;
     }
@@ -434,17 +437,38 @@
 }
 
 @Media (max-width: 600px) {
+    .Introduction-h2 {
 
+
+        font-size: 2em;
+
+    }
+
+    .Introduction {
+        margin: 5rem 0 0 0;
+    }
+
+    .Introduction-container {
+
+
+        font-size: 1.5em;
+
+    }
 
 
     .Projects-h2 {
         margin: auto;
-       
+
         font-size: 2em;
     }
 
     .Projects-a {
         width: 100%;
+    }
+
+    .Servicio-containers {
+
+        padding: 2rem 0;
     }
 
 

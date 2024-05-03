@@ -101,8 +101,8 @@ html {
 }
 
 body {
-    background:#112E3D;
-    background: linear-gradient(127deg, rgba(2,48,71,1) 48%, rgba(41,43,43,1) 100%);
+    background: #112E3D;
+    background: linear-gradient(127deg, rgba(2, 48, 71, 1) 48%, rgba(41, 43, 43, 1) 100%);
     font-family: "Poppins", sans-serif;
     color: var(--c-white);
 
@@ -203,6 +203,7 @@ body {
     padding: 0rem 0 0 4.9rem;
     font-style: italic;
 }
+
 /* Elemento de redes en la parte inferior izquierda de la pantalla */
 
 .Redes {
@@ -220,11 +221,11 @@ body {
     top: 50%;
     left: 0;
     z-index: 1;
- 
+
 }
 
 .Red-svg {
-   color: grey;
+    color: grey;
     width: 2rem;
     height: 2rem;
 }
@@ -242,7 +243,7 @@ body {
     margin: 10rem auto 0;
     padding: 2rem;
     color: var(--c-white);
-   
+
 
 
 }
@@ -332,20 +333,23 @@ body {
     .Header-logo {
         width: 3rem;
     }
+
     .Red-svg {
         display: none;
     }
-.Header{
-    background-color: var(--bg-c);
- justify-content: space-between;
-    padding: 1rem 3rem;
-}
+
+    .Header {
+        background-color: var(--bg-c);
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
     .Nav {
         width: 100%;
         display: none;
         pointer-events: none;
         overflow: hidden;
-        
+
 
 
     }
@@ -387,16 +391,23 @@ body {
         display: flex;
     }
 
-    
-    .Footer-wrapper{
+
+    .Footer-wrapper {
         justify-content: center;
         gap: 2rem;
-       
-        
+
+
     }
- 
-    .Span-h4 , .Span-h5{
+
+    .Span-h4,
+    .Span-h5 {
         font-size: 0.8em;
     }
-   
+
+    .Footer-span {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+
 }
