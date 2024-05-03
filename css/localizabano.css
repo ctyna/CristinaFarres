@@ -34,14 +34,12 @@
 .Introduction-h2 {
     font-size: var(--font-h2);
     margin: 5rem auto;
+    padding: 0 0 2rem 0;
+    border-bottom: .125rem solid var(--c-white);
 
 }
 
-.Introduction-h2::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid var(--c-white);
-}
+
 
 .Introduction-p {
 
@@ -549,7 +547,9 @@
 }
 
 @Media (max-width: 620px) {
-
+    .Introduction-h2 {
+        font-size: calc( var(--font-h2) - 0.5em ) ;
+    }
 
     .Phases-card {
         padding: 0;
@@ -572,6 +572,12 @@
      .Wireframes-img{
         width: 100%;
         padding: 0;
+     }
+     .Carrousel{
+        width: 100%;
+     }
+     .Carrousel-svg{
+       opacity: 0;
      }
 }
 

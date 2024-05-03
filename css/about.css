@@ -1,12 +1,13 @@
 
 .Main-wrapper{
     margin: 7rem 0;
+    
 }
 
 .About{
-background-color: #003049;
+
 padding: 5rem 0;
-   background-repeat: no-repeat ;
+
     width: 100% ;
     
     /* background-color: aquamarine; */
@@ -22,7 +23,7 @@ padding: 5rem 0;
 
 }
 .About-text{
-   
+   width: 100%;
     padding:0 5rem 2rem;
     display: flex;
     flex-flow: column nowrap;
@@ -41,34 +42,98 @@ padding: 5rem 0;
    
 }
 .About-img{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
+    max-height: 70vh;
     max-width: 1000px;
     
     object-fit: cover;
-    box-shadow: 10px 10px 30px 0px;
+   
+   
 }
 .About-asset{ 
     transition: transform rotate 1s ease;
 }
 
-
-.About-flower {
-    width: 10rem;
+.Formacion{
+    width: 85%;
+    margin: auto;
+    padding: 5rem;
+    /* background-color: aqua; */
+}
+.Formacion-h2{
+    font-size: var(--font-h2);
+}
+.Formacion-ul{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.Formacion-li{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5;
+}
+.Formacion-li{
+    font-size: 1.5em;
+}
+.Formacion-span{
+    font-style: italic;
+    font-size: 1em;
+    color: lightsalmon;
 }
 
 
 
-.About-asset:hover .About-img{
-    
-    transform: rotate(25deg);
-}
 
 
 
-@media (max-width:700px) {
+@media (max-width:1000px) {
     .About-wrapper{
         grid-template-columns: 1fr;
         row-gap: 5rem;
+    }
+}
+
+@media (max-width:700px) {
+    .About-text{
+        padding: 0;
+        
+    }
+    .About-h2, .Formacion-h2{
+        font-size: 2em;
+        
+    }
+
+    .About-p{
+      
+        font-size: 1em;
+    }
+    .About-img{
+        /* background-color: aqua; */
+        width: 100%;
+        max-height: 30vh;
+        max-width: 1000px;
+        
+        object-fit: cover;
+       
+       
+    }
+    .Formacion{
+        width: 100%;
+        padding: 3rem;
+    }
+    .Formacion-li{
+        margin: 2rem 0 0;
+        font-size: 1em;
+       text-align: center;
+    }
+    .Formacion-span{
+        font-size: 0.8em;
+
     }
 }

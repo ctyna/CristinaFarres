@@ -10,7 +10,7 @@
 
 .Introduction-video {
 
-    opacity: 0.2;
+    opacity: 0.4;
     width: 100%;
 
 
@@ -66,9 +66,6 @@
     top: 100%;
     left: 0%;
     opacity: 0;
-    transition:
-
-
 }
 
 .Introduction-h3--2 {
@@ -84,12 +81,16 @@
     transition: opacity 2s ease;
 }
 
-
-
 .About {
+    padding: 2rem 2rem 6rem;
+    width: 100%;
+    background-color: var(--c-black);
+}
+
+.About-wrapper {
     /* background-color: aqua; */
     width: var(--width-);
-    margin: 5rem auto;
+    margin: 5rem auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     row-gap: 2rem;
@@ -99,7 +100,7 @@
 .About-text {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -116,7 +117,13 @@
     margin: 0 0 2rem;
 }
 
+.About-p {
+    font-size: 1.5em;
+    padding: 1rem 0;
+}
+
 .About-picture {
+    border-radius: 2rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -124,18 +131,15 @@
 }
 
 .About-img {
-    width: 50%;
+    border-radius: 2rem;
+    width: 80%;
     object-fit: cover;
-    filter: grayscale(2);
-
-
-}
-
-.About-img:hover {
-    filter: grayscale(0);
 }
 
 .Projects {
+    
+    
+    
     width: var(--width-);
     margin: 15rem auto 0;
 }
@@ -411,19 +415,7 @@
         transform: translateY(0%);
     }
 
-    @keyframes volar {
-        0% {
-            transform: translateX(0%);
-        }
 
-        50% {
-            transform: translateX(0%);
-        }
-
-        100% {
-            transform: translateX(90%) translateY(-250%);
-        }
-    }
 
     .Introduction-h2 {
         font-size: 4em;
@@ -453,6 +445,19 @@
 
         font-size: 1.5em;
 
+    }
+
+    .About-h2,
+    .About-span {
+
+        font-size: 1.8em;
+    }
+
+    .About-p {
+        font-size: 1em;
+    }
+    .About-img{
+        width: 100%;
     }
 
 

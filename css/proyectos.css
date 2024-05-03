@@ -92,5 +92,10 @@
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 2rem;
+
+
   }
+    .Container-h2{
+        font-size:  calc(var(--font-h2) - 1.5em) ;
+    }
 }
