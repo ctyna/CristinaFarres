@@ -19,10 +19,11 @@ Creación de una página para el proyecto final en Diseño web HTLM, CSS y JS de
 Hola soy Cristina Farrés, nueva en el mundo del Front-end y este es mi proyecto final para la escuela CEI del módulo de Diseño web HTML, CSS y JS.
 Además, soy UX/UI desinger y fotógrafa. Me encanta poder seguir aprendiendo nuevos skills y desarrollarme como persona y profesional. 
 
+🌱 I’m currently learning **Full stack developer**
+
 
 ## 🛠 Skills
-Javascript, HTML, CSS.
-
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
 
 
 ## Partes de la página
@@ -30,10 +31,21 @@ Javascript, HTML, CSS.
 
 <p align="center">
   <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Web personal Cristina Farrés">
-      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Inicio.png">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Iniciogit.png">
       <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Proyectos.png">
   </a>
 </p>
+
+### Proyectos
+
+<p align="center">
+  <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Web personal Cristina Farrés">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Fotografía.png">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Localizabano.png">
+  </a>
+</p>
+
+
 
 ## Authors
 
@@ -43,6 +55,3 @@ Javascript, HTML, CSS.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-
