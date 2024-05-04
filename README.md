@@ -10,7 +10,7 @@ Creación de una página para el proyecto final en Diseño web HTLM, CSS y JS de
 ## Tabla de contenido
 - [About Me](#-about-me).
 - [Skills](#-skills).
-- [Contribuir](#authors).
+- [Autora](#authors).
 
 
 
@@ -26,7 +26,7 @@ Javascript, HTML, CSS.
 
 #### Insertar imágenes
 
-`![Imagen de inicio]("https://cristinafarres.com/assets/lbsillon.webp")`
+![Imagen de inicio]("https://github.com/ctyna/CristinaFarres/blob/main/assets/filterhigh.webp")
 
 
 
