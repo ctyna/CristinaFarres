@@ -27,9 +27,9 @@ Javascript, HTML, CSS.
 ## Partes de la página
 
 <p align="center">
-  <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Disney+ Copycat | Koalba">
-      <img width="45%" src="https://user-images.githubusercontent.com/34134103/170824941-45aa75a9-a39f-46f4-9cff-60e9242bc1f8.jpg">
-      <img width="45%" src="https://user-images.githubusercontent.com/34134103/170824649-1f19300a-949a-4966-a278-b4bb002d7a7e.jpg">
+  <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Web personal Cristina Farrés">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Inicio.png">
+      <img width="45%" src="">
   </a>
 </p>
 
