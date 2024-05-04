@@ -3,7 +3,7 @@
     margin: 7rem 0;
     
 }
-
+/* Sección sobre mí */
 .About{
 
 padding: 5rem 0;
@@ -51,7 +51,7 @@ padding: 5rem 0;
    
    
 }
-
+/* Sección de mi formación */
 .Formacion{
     width: 85%;
     margin: auto;
@@ -83,6 +83,8 @@ padding: 5rem 0;
     font-size: 1em;
     color: lightsalmon;
 }
+
+/* Sección para descargar mi currículum */
 .Main-btn{
 width: 20%;
 margin: auto;
@@ -102,7 +104,7 @@ background-color: var(--c-black);
 
 
 
-
+/* Media queries */
 
 @media (max-width:1500px) {
     .About-wrapper{
@@ -126,10 +128,6 @@ background-color: var(--c-black);
         font-size: 1.2em;
     }
 }
-
-
-
-
 
 @media (max-width:700px) {
     .About-text{

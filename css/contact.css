@@ -1,9 +1,14 @@
+/* Color de fondo diferente */
+
 body{
     background: radial-gradient(circle closest-corner at 0% 50%, #4dacf5a6 0%, #0000ff00 100%), radial-gradient(circle farthest-corner at 100% 0%, #712ad5b3 0%, #0000ff00 100%), radial-gradient(circle farthest-corner at 50% 100%, #ec9ef5ff 0% 0%, #a6a5f3ff 50%, #42a1ffff 100%);
    
 }
+.Nav{
+    color: var(--c-black);
+}
 
-
+/* Sección de círculos flotantes */
 
 .Flotantes {
     margin: 7rem auto;
@@ -32,22 +37,6 @@ body{
     left: 50%;
     animation: botechoco 8s linear infinite;
 }
-
-@keyframes botechoco {
-
-    0% {
-        top: 12.5rem;
-    }
-
-    50% {
-        top: 18.75rem;
-    }
-
-    100% {
-        top: 12.5rem;
-    }
-}
-
 .Flotantes-svg:nth-child(2) {
     /* background-color: #ffc100; */
 
@@ -58,22 +47,6 @@ body{
     animation: botepink 8s linear infinite;
 
 }
-
-@keyframes botepink {
-
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 12.5rem;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
 .Flotantes-svg:nth-child(3) {
     /* background-color: aqua; */
     width: 6%;
@@ -82,24 +55,6 @@ body{
     right: 20%;
     animation: boteyellow 3s linear infinite;
 }
-
-@keyframes boteyellow {
-
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 6.25rem;
-    }
-
-    100% {
-        top: 0px;
-    }
-
-
-}
-
 .Flotantes-svg:nth-child(4) {
     width: 20%;
     fill: blue;
@@ -108,31 +63,12 @@ body{
     animation: boteazul 3s linear infinite;
 
 }
-
-@keyframes boteazul {
-
-    0% {
-        bottom: 0px;
-    }
-
-    50% {
-        bottom: 6.25rem;
-    }
-
-    100% {
-        bottom: 0px;
-    }
-
-
-}
-
 .Flotantes-svg:nth-child(5) {
     bottom: 0%;
     left: 10%;
     fill: #C2CFA3;
     animation: boteazul 3s linear infinite;
 }
-
 .Flotantes-svg:nth-child(6) {
     top: -20%;
     left: 30%;
@@ -141,23 +77,8 @@ body{
 
 }
 
-@keyframes boterojo {
 
-    0% {
-        top: -18rem;
-    }
-
-    50% {
-        top: 6.25rem;
-    }
-
-    100% {
-        top: -18rem;
-    }
-
-
-}
-
+/* Parte principal del formulario */
 .Main {
     position: relative;
     margin: 0 0 2rem;
@@ -256,8 +177,87 @@ textarea {
 }
 
 
+/* Keyframes */
+@keyframes botechoco {
 
-/* Media quearies */
+    0% {
+        top: 12.5rem;
+    }
+
+    50% {
+        top: 18.75rem;
+    }
+
+    100% {
+        top: 12.5rem;
+    }
+}
+@keyframes botepink {
+
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 12.5rem;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+@keyframes boteyellow {
+
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 6.25rem;
+    }
+
+    100% {
+        top: 0px;
+    }
+
+
+}
+@keyframes boteazul {
+
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 6.25rem;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+
+
+}
+@keyframes boterojo {
+
+    0% {
+        top: -18rem;
+    }
+
+    50% {
+        top: 6.25rem;
+    }
+
+    100% {
+        top: -18rem;
+    }
+
+
+}
+
+
+
+/* Media Queries */
 
 @media (max-width: 1700px) {
 

@@ -1,3 +1,6 @@
+
+/* Parte dónde el astronauta tiene un fondo giratorio */
+
 .Container {
 
   overflow: hidden;
@@ -58,7 +61,7 @@
   left: 40%;
 
 }
-
+/* KEYFRAMES */
 @keyframes rotacion {
   from {
     transform: rotate(0deg);
@@ -71,7 +74,7 @@
   }
 }
 
-/* Media quearies */
+/* Media Queries */
 @media (max-width:1500px) {
   .Container-asset {
     margin: 10rem auto;

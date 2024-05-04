@@ -39,8 +39,6 @@
 
 }
 
-
-
 .Introduction-p {
 
     margin: 2rem auto;
@@ -91,8 +89,6 @@
     align-items: flex-end;
     position: relative;
 }
-
-
 .Phases-grid {
     width: 100%;
     margin: 0 auto;
@@ -100,7 +96,6 @@
     grid-template-columns: repeat(4, 1fr);
 
 }
-
 
 .Phases-card {
     padding: 0 2rem;
@@ -143,12 +138,11 @@
     transform: rotateY(0deg);
 }
 
-
 .Phases-h3 {
+    color: var(--c-black);
     text-transform: uppercase;
     font-size: 1.5rem;
 }
-
 
 .Phases-back {
     background-color: #626B92;
@@ -168,7 +162,6 @@
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
-
 .Phases-ul {
     /* background-color: antiquewhite; */
     display: flex;
@@ -200,21 +193,17 @@
     position: relative;
 }
 
-
 .Article-h2 {
     font-size: 1.2em;
     font-weight: var(--bold-);
 
 }
-
 .Article-p {
     margin: 2rem 0;
 }
-
 .Article-span {
     font-weight: var(--bold-);
 }
-
 .Research-h3 {
     font-size: 1.2em;
     font-weight: var(--bold-);
@@ -284,7 +273,7 @@
 
 }
 
-
+/* Requisitos de la aplicación */
 
 .Require {
     width: 70%;
@@ -328,6 +317,7 @@
     margin: 1rem 0;
 }
 
+/* Card Sorting */
 .Card {
     width: 70%;
     margin: 6rem auto;
@@ -356,6 +346,8 @@
     object-fit: contain;
     filter: drop-shadow(.625rem .625rem .625rem);
 }
+
+/* Sección Low fidelity  y High fidelity*/
 
 .Lowfi {
     background-color: var(--c-white);
@@ -433,7 +425,6 @@
 }
 
 
-
 .Wireframes-btn:hover {
     background-color: rgb(252, 184, 95);
     color: var(--c-black);
@@ -457,6 +448,9 @@
     transform: translateX(1.25rem);
     color: var(--c-black);
 }
+
+
+/* Resultado final de la app */
 .Results{
     margin: 10rem 0 0;
     padding: 2rem;
@@ -495,7 +489,7 @@
 
 
 
-/* Media quearies */
+/* Media Queries */
 
 @media (max-width: 1400px) {
     .Phases-grid {

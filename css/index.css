@@ -13,10 +13,6 @@
     opacity: 0.4;
     width: 100%;
 
-
-
-
-
 }
 
 .Introduction-text {
@@ -81,6 +77,7 @@
     transition: opacity 2s ease;
 }
 
+/* Parte introductora sobre mí */
 .About {
     padding: 2rem 2rem 6rem;
     width: 100%;
@@ -136,10 +133,11 @@
     object-fit: cover;
 }
 
+/* Parte de proyectos */
 .Projects {
-    
-    
-    
+
+
+
     width: var(--width-);
     margin: 15rem auto 0;
 }
@@ -237,7 +235,7 @@
 }
 
 
-
+/*  Servicios que ofrezco */
 .Servicio {
     /* background-color: aqua; */
     width: var(--width-);
@@ -301,9 +299,11 @@
 
 }
 
+
 .Footer {
     margin: 0;
 }
+
 
 /* Keyframes */
 
@@ -318,7 +318,7 @@
 }
 
 
-/* Media quearies */
+/* Media Queries */
 
 @media (max-width: 1510px) {
 
@@ -331,6 +331,33 @@
     .Projects-h4 {
         width: 120%;
         /* background-color: aqua; */
+
+    }
+
+
+
+}
+
+@media (max-width: 1200px) {
+
+
+    .Introduction-h2 {
+        font-size: 5em;
+    }
+
+    .Introduction-h3 {
+        font-size: 1em;
+    }
+    .Introduction-text {
+
+        color: var(--c-white);
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
 
     }
 
@@ -456,7 +483,8 @@
     .About-p {
         font-size: 1em;
     }
-    .About-img{
+
+    .About-img {
         width: 100%;
     }
 
