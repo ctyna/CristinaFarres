@@ -31,10 +31,9 @@ Javascript, HTML, CSS.
 <p align="center">
   <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Web personal Cristina Farrés">
       <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Inicio.png">
-      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Inicio.png">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Proyectos.png">
   </a>
 </p>
-
 
 ## Authors
 
