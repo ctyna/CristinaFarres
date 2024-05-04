@@ -10,6 +10,7 @@ Creación de una página para el proyecto final en Diseño web HTLM, CSS y JS de
 ## Tabla de contenido
 - [About Me](#-about-me).
 - [Skills](#-skills).
+- [Partes de la página](#partes-de-la-página).
 - [Autora](#authors).
 
 
@@ -25,6 +26,7 @@ Javascript, HTML, CSS.
 
 
 ## Partes de la página
+### Inicio
 
 <p align="center">
   <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Web personal Cristina Farrés">
