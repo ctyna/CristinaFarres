@@ -35,6 +35,15 @@ Javascript, HTML, CSS.
   </a>
 </p>
 
+### Proyectos
+
+<p align="center">
+  <a href="https://github.com/ctyna/CristinaFarres/tree/main" title="Web personal Cristina Farrés">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Fotografía.png">
+      <img width="45%" src="https://github.com/ctyna/CristinaFarres/blob/main/assets/Localizabano.png">
+  </a>
+</p>
+
 ## Authors
 
 - [@CristinaFarrés](https://github.com/ctyna)
